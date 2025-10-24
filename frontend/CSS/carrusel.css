@@ -1,0 +1,23 @@
+/* Asegura que el contenedor de la imagen no tenga padding innecesario */
+.card-producto {
+    text-align: center;
+    height: 95%;
+}
+
+/* Asegura que las imágenes ocupen todo el ancho y mantengan la proporción */
+.card-producto img {
+    width: 100%;
+    height: 95%;
+    display: block;
+    border-radius: 10%;
+    object-fit: cover; 
+}
+
+/* Estilo del texto debajo */
+.titulo-producto {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #333;
+}
