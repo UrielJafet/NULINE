@@ -1,0 +1,29 @@
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Configuración local
+.env
+.env.local
+config.php
+
+# Carpetas temporales
+/tmp/
+/cache/
+/uploads/
+/backup/
+
+# IDEs
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Compilaciones o librerías descargadas
+/node_modules/
+/vendor/
+/dist/
+/build/
+
+/assets/bootstrap/
