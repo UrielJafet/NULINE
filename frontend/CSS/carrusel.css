@@ -2,6 +2,17 @@
 .card-producto {
     text-align: center;
     height: 95%;
+    /* Eliminar cualquier margen o padding por defecto de la tarjeta */
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    /* Indica que es clickeable */
+    transition: transform 0.3s ease;
+    /* Transición para el efecto hover */
+}
+
+.card-producto:hover {
+    transform: translateY(-5px);
 }
 
 /* Asegura que las imágenes ocupen todo el ancho y mantengan la proporción */
@@ -11,13 +22,30 @@
     display: block;
     border-radius: 10%;
     object-fit: cover; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    /* Sombra sutil para profundidad */
+    transition: opacity 0.3s ease;
 }
 
 /* Estilo del texto debajo */
 .titulo-producto {
-    margin-top: 10px;
-    font-size: 14px;
-    font-weight: bold;
+    margin-top: 1.25rem;
+/* Margen superior amplio */
+    font-size: 1rem;
+/* Tamaño de fuente estándar */
+    font-weight: 600;
+/* Semi-negrita para destacar */
     text-transform: uppercase;
-    color: #333;
+/* Clave en marcas deportivas */
+    letter-spacing: 0.5px;
+/* Pequeño espaciado entre letras */
+    color: #1A1A1A;
+/* Color oscuro para el texto */
+}
+
+/* Esconde las flechas en pantallas muy pequeñas, donde no hay espacio */
+@media (max-width: 767px) {
+    .splide__arrows {
+        display: none;
+    }
 }

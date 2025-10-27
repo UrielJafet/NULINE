@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     autoplay: true, // 🔥 Activa movimiento automático
     interval: 2500, // ⏱️ Tiempo entre movimientos (ms)
     pauseOnHover: true, // Se pausa si pasas el mouse encima
-    arrows: false, // ❌ Quita flechas
+    arrows: true, // ❌ Quita flechas
     pagination: false, // ❌ Quita puntos de navegación
     breakpoints: {
       1024: { perPage: 3 },

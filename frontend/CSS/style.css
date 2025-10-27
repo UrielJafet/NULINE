@@ -1,0 +1,47 @@
+/*------- Hero section ------*/
+.hero {
+    height: 90vh;
+    /* ocupa casi toda la pantalla */
+    min-height: 600px;
+}
+
+.hero-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /* evita deformaciones */
+    filter: brightness(80%);
+}
+
+.bg-gradient-dark {
+    background: linear-gradient(to bottom right,
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.3));
+}
+
+.tracking-wide {
+    letter-spacing: 2px;
+}
+
+.hero h1,
+.hero p,
+.hero a {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 1s ease forwards;
+}
+
+.hero p {
+    animation-delay: 0.3s;
+}
+
+.hero a {
+    animation-delay: 0.6s;
+}
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
